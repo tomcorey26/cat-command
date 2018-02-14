@@ -15,6 +15,9 @@ What `cat` does is that it takes one or more filenames as command-line arguments
 
 So, your `cat` must do the same. Like the `echo` program you wrote for Lab 2, `cat` takes several command line arguments. But, it must try to open a file with the same name as each command-line argument. If it can't open a file, it must print "could not open file " to the special output stream `STDERR` followed by the name of the offending file.
 
+## Academic honesty
+
+Remember, this is a **solo assignment.** You may not show your code to any classmate, or look at any classmate's code.
 
 ## Getting Started
 
@@ -22,12 +25,15 @@ So, your `cat` must do the same. Like the `echo` program you wrote for Lab 2, `c
 - Download the assignment framework with `git clone https://github.com/csc211/a3`
 - You will see this `Readme.md` along with a C++ source file (`cat.cpp`) and a compile script `compile`
 - You can now compile the assignment by typing `./compile` and it will produce an executable program called `cat`. You can run `cat` by typing `./cat` However, it won't do anything yet!
+- Read the existing comments in `cat.cpp` carefully and be sure you understand them **before doing anything else!**
 
 ## Requirements
 
-Your program must take one or more command-line arguments, each of which should be a file name. It must print out the contents of each file in the order given by the command-line arguments. If any file specified cannot be opened, the message "could not open file " followed by the filename must be printed to `STDERR`. Note that just as `std::cout << "hi"` prints the message "hi" to `STDOUT`, `std::cerr << "hi"` prints it to `STDERR`.
+Your program must take one or more command-line arguments, each of which should be a file name. It must print out the contents of each file in the order given by the command-line arguments. If any file specified cannot be opened, the message "cat: " followed by the filename, followed by ": no such file or directory" must be printed to `STDERR`. Note that just as `std::cout << "hi"` prints the message "hi" to `STDOUT`, `std::cerr << "hi"` prints it to `STDERR`. The difference between these different **output streams** will be discussed in class.
 
 If given no command-line arguments, your program should simply exit (your `main()` can issue a `return 0`).
+
+\newpage
 
 ## Hints
 
