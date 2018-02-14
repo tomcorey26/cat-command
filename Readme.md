@@ -15,12 +15,16 @@ Before you proceed, you should first play with `cat` on the command line. Get in
 - Now, type `cat /etc/hosts /etc/hosts` and see if you can make sense of the output. 
 - Now, try typing `cat /etc/hosts /etc/hosts > test.txt` 
 	- Followed by `cat test.txt`. 
-	- Note that the file `test.txt` contains two copies of the contents of `/etc/hosts`. 
-	- This is because the `>` redirected the output from `cat` to the new file `test.txt`.
+	- How do the contents of test.txt compare with the output of cat /etc/hosts /etc/hosts?
+	- As an aside, the `>` redirected the output from `cat` to the new file `test.txt`.
 
 What `cat` does is that it takes one or more filenames as command-line arguments. It prints out the contents of each file in turn. By using the Unix shell feature of **redirection** (the `>` character), we can combine all of those files into one file. Undoubtedly, you can imagine circumstances when this would be useful.
 
 So, your `cat` must do the same. Like the `echo` program you wrote for Lab 2, `cat` takes several command line arguments. But, it must try to open a file with the same name as each command-line argument. If it can't open a file, it must print "could not open file " to the special output stream `STDERR` followed by the name of the offending file.
+
+## Submission limits
+
+For this assignment, you only get 5 submissions to Mimir, so make sure to **test locally** first. Only submit to Mimir when you have successfully run your program locally on several different inputs (including on files that don't exist).
 
 ## Academic honesty
 
@@ -96,7 +100,7 @@ One benefit to reimplementing a common program like `cat` is that you can test y
 
 ## Grading Rubric
 
-For this assignment, correctly passing all tests on Gradescope is worth 80% of your grade. The remaining 20% is based on reasonable commenting habits, and the structure and organization of your code.
+For this assignment, correctly passing all tests on Mimir is worth 80% of your grade. The remaining 20% is based on reasonable commenting habits, and the structure and organization of your code.
 
 
 ## Submitting
