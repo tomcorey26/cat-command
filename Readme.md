@@ -33,6 +33,12 @@ Your program must take one or more command-line arguments, each of which should 
 
 If given no command-line arguments, your program should simply exit (your `main()` can issue a `return 0`).
 
+## Comments
+
+Your comments should **explain the contract of any function you write**. That is what arguments does a function expect, and what value does it return, and **what is the relationship between the two**.
+
+Comments should not focus on explaining the C++ language to the reader, though at this point, if doing so helps you understand your own code, it's fine. Any code you write that you think is particularly "clever" should be explained (for example, non-obvious corrections for off-by-one errors, or a for loop that starts at an index other than 0).
+
 \newpage
 
 ## Hints
