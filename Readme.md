@@ -9,9 +9,16 @@ One of the many command-line utilities available on Linux (and other Unix-like s
 
 For this assignment, you are going to write your own version of `cat`.
 
-Before you proceed, you should first play with `cat` on the command line. Get into your Docker environment (or alternative, for those of you using Virtualbox or CodeAnywhere or another solution). Type `cat /etc/hosts` and notice that the contents of the file `/etc/hosts` are printed out. Now, type `cat /etc/hosts /etc/hosts` and see if you can make sense of the output. Now, try typing `cat /etc/hosts /etc/hosts > test.txt` followed by `cat test.txt`. Note that the file `test.txt` contains two copies of the contents of `/etc/hosts`. This is because the `>` redirected the output from `cat` to the new file `test.txt`.
+Before you proceed, you should first play with `cat` on the command line. Get into your Docker environment (or alternative, for those of you using Virtualbox or CodeAnywhere or another solution). 
 
-What `cat` does is that it takes one or more filenames as command-line arguments. It prints out the contents of each file in turn. 
+- Type `cat /etc/hosts` and notice that the contents of the file `/etc/hosts` are printed out. 
+- Now, type `cat /etc/hosts /etc/hosts` and see if you can make sense of the output. 
+- Now, try typing `cat /etc/hosts /etc/hosts > test.txt` 
+	- Followed by `cat test.txt`. 
+	- Note that the file `test.txt` contains two copies of the contents of `/etc/hosts`. 
+	- This is because the `>` redirected the output from `cat` to the new file `test.txt`.
+
+What `cat` does is that it takes one or more filenames as command-line arguments. It prints out the contents of each file in turn. By using the Unix shell feature of **redirection** (the `>` character), we can combine all of those files into one file. Undoubtedly, you can imagine circumstances when this would be useful.
 
 So, your `cat` must do the same. Like the `echo` program you wrote for Lab 2, `cat` takes several command line arguments. But, it must try to open a file with the same name as each command-line argument. If it can't open a file, it must print "could not open file " to the special output stream `STDERR` followed by the name of the offending file.
 
