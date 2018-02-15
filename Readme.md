@@ -3,6 +3,8 @@
 
 ## Due Wednesday, February 21st by 11PM
 
+# Read this document entirely before starting.
+
 ### Background
 
 One of the many command-line utilities available on Linux (and other Unix-like systems) is `cat`, which is short for **concatenate**. In its simplest form, `cat` can display the contents of a text file; it can also be used to concatenate together many text files.
@@ -49,8 +51,6 @@ If given no command-line arguments, your program should simply exit (your `main(
 Your comments should **explain the contract of any function you write**. That is what arguments does a function expect, and what value does it return, and **what is the relationship between the two**.
 
 Comments should not focus on explaining the C++ language to the reader, though at this point, if doing so helps you understand your own code, it's fine. Any code you write that you think is particularly "clever" should be explained (for example, non-obvious corrections for off-by-one errors, or a for loop that starts at an index other than 0).
-
-\newpage
 
 ## Hints
 
